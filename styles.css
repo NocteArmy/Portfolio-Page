@@ -1,0 +1,157 @@
+/* Imports
+----------------------------*/
+@import url(https://fonts.googleapis.com/css?family=Roboto:100);
+
+/* Global Styles
+----------------------------*/
+body {
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+}
+.jumbotron-fluid {
+  background: #EDF2F4;
+  padding: 20px 0;
+}
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
+}
+h2 {
+  margin-top: 0;
+}
+.title {
+  font-weight: 700;
+}
+h3 {
+  margin: 0;
+}
+p {
+  font-family: inherit;
+  font-weight: 100;
+}
+li {
+  font-family: inherit;
+  font-weight: 100;
+}
+a {
+  color: #c18934;
+}
+a:hover {
+  text-decoration: none;
+}
+
+/* Header and Footer
+----------------------------*/
+header, footer {
+  background: #2B2D42;
+}
+/* Header */
+header {
+  font-size: 1.25rem;
+}
+header .profile-img {
+  width: 300px;
+  border-radius: 10%;
+}
+header .container {
+  padding-bottom: 25px;
+}
+header h1, header h2, header p {
+  color: #EDF2F4;
+  margin: 0;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 10px;
+  color: #8D99AE;
+}
+.contact-info {
+  padding: 5px;
+  display: inline-block;
+}
+.contact-info a {
+  font-size: 3em;
+  padding: 5px;
+}
+footer h2 {
+  color: #c18934;
+}
+
+/* Navigation
+----------------------------*/
+header .navbar {
+  background: #2B2D42;
+  margin-bottom: 0;
+  border-radius: 0;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 100;
+}
+header .navbar-default {
+  border: none;
+  border-radius: 0;
+  padding: 10px 0;
+}
+header .navbar-brand {
+  font-family: 'Roboto', sans-serif;
+  color: #c18934;
+  font-size: 1.3em;
+  font-weight: 300;
+}
+header .nav-link {
+  color: #c18934;
+}
+header .navbar-toggler {
+  color: rgba(193, 137, 52, .85);
+  border-color: rgba(193, 137, 52, .75);
+}
+
+/* Additional Styles
+----------------------------*/
+.about {
+  padding-bottom: 20px;
+  border-bottom: 4px solid #90aab6;
+}
+.portfolio {
+  padding-top: 20px;
+}
+.profile-img {
+  width: 250px;
+  border-radius: 10%;
+}
+.card-col {
+  margin: 10px 0;
+}
+.card {
+  width: 95%;
+  margin: auto;
+  border: 2px solid gray;
+  background: #d2d1d3;
+}
+.card-body {
+  border-top: 2px solid gray;
+  height: 150px
+}
+.card-title {
+  font-size: 24px;
+  font-weight: 700;
+}
+
+/* Media Queries
+----------------------------*/
+@media (max-width: 767px) {
+  header .navbar-nav {
+    text-align: right;
+  }
+  header .p-2 {
+    padding-right: 0!important;
+  }
+  header h1, header h2, header p {
+    text-align: center;
+  }
+  .contact-info a {
+    font-size: 2.25em;
+  }
+}
