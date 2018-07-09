@@ -16,14 +16,11 @@
   <body>
 
     <header>
-      <nav class="navbar navbar-expand-md">
-    
-        <a href="#" class="navbar-brand">Home</a>
-    
+      <nav id="navbar" class="navbar navbar-expand-md sticky-top">
+        <a href="#about" class="navbar-brand">Home</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span><i class="fas fa-angle-double-down"></i></span>
         </button>
-    
         <div class="collapse navbar-collapse" id="navbarNav">
           <ul class="navbar-nav mr-auto">
             <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
@@ -33,7 +30,7 @@
       </nav>
     </header>
       
-    <div class="jumbotron-fluid">
+    <div id="welcome-section" class="jumbotron-fluid">
       <div class="container">
         <div class="row about">
           <div class="col-md col-lg-4 text-center">
@@ -43,25 +40,31 @@
             <h1 id="about">Bradley Burrows</h1>
             <h2>Developer-in-Training</h2>
             <p>I am a self-taught programmer residing in the Kitchener-Waterloo Region.  I have a BASc in Civil Engineering.  I have recently completed courses on Lynda.com covering programming fundamentals and languages such as HTML, CSS, JavaScript, PHP, SQL, Node.js, and Git.  I continue to practice my programming skills through website development and solving problems on HackerRank and Project Euler.  I am dedicated to learning and growing as a programmer.</p>
+            <a id="profile-link" href="https://beta.freecodecamp.org/en/portfolio/noctearmy" target="_blank" rel="noopener">freeCodeCamp Profile</a>
           </div>
         </div>
-        <div class="portfolio">
-          <h1 id="portfolio">Portfolio</h1>
+      </div>
+    </div>
+      
+    <div class="jumbotron-fluid">
+      <div class="container">
+        <div id="projects" class="portfolio">
+          <h1 id="portfolio" class="title">Portfolio</h1>
           <div class="row no-gutters">
             <div class="col-xl-6 card-col">
-              <div class="card">
+              <div class="card project-tile">
                 <a href="https://www.bradleyburrows.com" target="_blank" rel="noopener"><img class="card-img-top portfolio-img" src="https://farm1.staticflickr.com/974/42069061722_ed685c54c0.jpg" alt="Personal Website" title="Personal Website"></a>
                 <div class="card-body">
-                  <h2 class="card-title">Personal Website</h2>
+                  <h2 class="project-title">Personal Website</h2>
                   <p>This is my personal website which I developed as my first project. It mostly serves static pages but also includes a user sign-up/log-in system and stores user data in a database.</p>
                 </div>
               </div>
             </div>
             <div class="col-xl-6 card-col">
-              <div class="card">
+              <div class="card project-tile">
                 <a href="https://codepen.io/noctearmy/pen/yjOEJx" target="_blank" rel="noopener"><img class="card-img-top portfolio-img" src="https://farm1.staticflickr.com/972/28242074658_b8c9092274.jpg" alt="Tribute Page" title="Tribute Page"></a>
                 <div class="card-body">
-                  <h2 class="card-title">Tribute Page</h2>
+                  <h2 class="project-title">Tribute Page</h2>
                   <p>This is a tribute page to my dog Nymeria that I created as part of the freeCodeCamp front-end certificate.</p>
                 </div>
               </div>
@@ -69,19 +72,19 @@
           </div>
           <div class="row no-gutters">
             <div class="col-xl-6 card-col">
-              <div class="card">
+              <div class="card project-tile">
                 <a href="https://codepen.io/noctearmy/pen/ZoLObj" target="_blank" rel="noopener"><img class="card-img-top portfolio-img" src="https://farm1.staticflickr.com/826/28242074798_854a568586.jpg" alt="Random Quotes" title="Random Quotes"></a>
                 <div class="card-body">
-                  <h2 class="card-title">Random Quote</h2>
+                  <h2 class="project-title">Random Quote</h2>
                   <p>This is a random quote app that serves random quotes from an API and gives the user an option to post the quote as a tweet. This was created as part of the freeCodeCamp front-end certificate.</p>
                 </div>
               </div>
             </div>
             <div class="col-xl-6 card-col">
-              <div class="card">
+              <div class="card project-tile">
                 <a href="https://codepen.io/noctearmy/pen/bMgarO" target="_blank" rel="noopener"><img class="card-img-top portfolio-img" src="https://farm1.staticflickr.com/828/42114698981_aca8128b5b.jpg" alt="Weather App" title="Weather App"></a>
                 <div class="card-body">
-                  <h2 class="card-title">Weather App</h2>
+                  <h2 class="project-title">Weather App</h2>
                   <p>This is a weather app that uses geolocation to perform an API for local weather and shows the current weather. This was created as part of the freeCodeCamp front-end certificate.</p>
                 </div>
               </div>
@@ -89,19 +92,19 @@
           </div>
           <div class="row no-gutters">
             <div class="col-xl-6 card-col">
-              <div class="card">
+              <div class="card project-tile">
                 <a href="https://codepen.io/noctearmy/pen/XqpYja" target="_blank" rel="noopener"><img class="card-img-top portfolio-img" src="https://farm1.staticflickr.com/964/27244301777_de1984edb5.jpg" alt="Wikipedia Viewer" title="Wikipedia Viewer"></a>
                 <div class="card-body">
-                  <h2 class="card-title">Wikipedia Viewer App</h2>
+                  <h2 class="project-title">Wikipedia Viewer App</h2>
                   <p>This is a Wikipedia viewer that allows the user to grab a random Wikipedia page or enter search to find related pages. This was created as part of the freeCodeCamp front-end certificate.</p>
                 </div>
               </div>
             </div>
             <div class="col-xl-6 card-col">
-              <div class="card">
+              <div class="card project-tile">
                 <a href="https://codepen.io/noctearmy/pen/devmpB" target="_blank" rel="noopener"><img class="card-img-top portfolio-img" src="https://farm1.staticflickr.com/973/27244301927_3ecea7f375.jpg" alt="Twitch App" title="Twitch App"></a>
                 <div class="card-body">
-                  <h2 class="card-title">Twitch App: Who Is Online?</h2>
+                  <h2 class="project-title">Twitch App: Who Is Online?</h2>
                   <p>This is a twitch app that calls to FCC's API for Twitch to show if a given channel is offline/online. This was created as part of the freeCodeCamp front-end certificate.</p>
                 </div>
               </div>
@@ -109,19 +112,19 @@
           </div>
           <div class="row no-gutters">
             <div class="col-xl-6 card-col">
-              <div class="card">
+              <div class="card project-tile">
                 <a href="https://codepen.io/noctearmy/pen/BxRNey" target="_blank" rel="noopener"><img class="card-img-top portfolio-img" src="https://farm1.staticflickr.com/946/27244302097_7d87b50e9f.jpg" alt="Calculator.js" title="Calculator.js"></a>
                 <div class="card-body">
-                  <h2 class="card-title">JavaScript Calculator</h2>
+                  <h2 class="project-title">JavaScript Calculator</h2>
                   <p>This is a simplistic JavaScript calculator that allows for basic arithmetic to be completed. This was created as part of the freeCodeCamp front-end certificate.</p>
                 </div>
               </div>
             </div>
             <div class="col-xl-6 card-col">
-              <div class="card">
+              <div class="card project-tile">
                 <a href="https://codepen.io/noctearmy/pen/deWadd" target="_blank" rel="noopener"><img class="card-img-top portfolio-img" src="https://farm1.staticflickr.com/955/27244302047_37de38b4ab.jpg" alt="Pomodoro Clock" title="Pomodoro Clock"></a>
                 <div class="card-body">
-                  <h2 class="card-title">Pomodoro Clock</h2>
+                  <h2 class="project-title">Pomodoro Clock</h2>
                   <p>This is a pomodoro clock that allows the user to set a session length and break length and then cycles through sessions and breaks. This was created as part of the freeCodeCamp front-end certificate.</p>
                 </div>
               </div>
@@ -129,19 +132,19 @@
           </div>
           <div class="row no-gutters">
             <div class="col-xl-6 card-col">
-              <div class="card">
+              <div class="card project-tile">
                 <a href="https://codepen.io/noctearmy/pen/yjXdpM" target="_blank" rel="noopener"><img class="card-img-top portfolio-img" src="https://farm1.staticflickr.com/976/27244301967_36a04eca81.jpg" alt="Tic Tac Toe" title="Tic Tac Toe"></a>
                 <div class="card-body">
-                  <h2 class="card-title">Tic Tac Toe Game</h2>
+                  <h2 class="project-title">Tic Tac Toe Game</h2>
                   <p>This is a simplistic Tic Tac Toe game that allows for one or two player options and has a computer player for one player. This was created as part of the freeCodeCamp front-end certificate.</p>
                 </div>
               </div>
             </div>
             <div class="col-xl-6 card-col">
-              <div class="card">
+              <div class="card project-tile">
                 <a href="https://codepen.io/noctearmy/pen/qYPVMx" target="_blank" rel="noopener"><img class="card-img-top portfolio-img" src="https://farm1.staticflickr.com/974/27244301987_b46e023648.jpg" alt="Simon Game" title="Simon Game"></a>
                 <div class="card-body">
-                  <h2 class="card-title">Simon Game</h2>
+                  <h2 class="project-title">Simon Game</h2>
                   <p>This is a Simon game that has the user matching a random series of pad presses and ends once the user has completed 20 rounds. This was created as part of the freeCodeCamp front-end certificate.</p>
                 </div>
               </div>

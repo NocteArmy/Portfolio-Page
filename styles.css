@@ -43,21 +43,21 @@ a:hover {
 
 /* Header and Footer
 ----------------------------*/
-header, footer {
-  background: #2B2D42;
+nav, #welcome-section, footer {
+  background: #2B2D42!important;
 }
 /* Header */
-header {
+nav, #welcome-section {
   font-size: 1.25rem;
 }
-header .profile-img {
+#welcome-section .profile-img {
   width: 300px;
   border-radius: 10%;
 }
-header .container {
+#welcome-section .container {
   padding-bottom: 25px;
 }
-header h1, header h2, header p {
+#welcome-section h1, #welcome-section h2, #welcome-section p {
   color: #EDF2F4;
   margin: 0;
 }
@@ -82,37 +82,40 @@ footer h2 {
 
 /* Navigation
 ----------------------------*/
-header .navbar {
+.navbar {
   background: #2B2D42;
   margin-bottom: 0;
   border-radius: 0;
   font-family: 'Roboto', sans-serif;
   font-weight: 100;
 }
-header .navbar-default {
+.navbar-default {
   border: none;
   border-radius: 0;
   padding: 10px 0;
 }
-header .navbar-brand {
+.navbar-brand {
   font-family: 'Roboto', sans-serif;
   color: #c18934;
   font-size: 1.3em;
   font-weight: 300;
 }
-header .nav-link {
+.nav-link {
   color: #c18934;
 }
-header .navbar-toggler {
+.navbar-toggler {
   color: rgba(193, 137, 52, .85);
   border-color: rgba(193, 137, 52, .75);
 }
 
 /* Additional Styles
 ----------------------------*/
+#welcome-section {
+  min-height: 99.8vh;
+  padding-top: 15vh;
+}
 .about {
   padding-bottom: 20px;
-  border-bottom: 4px solid #90aab6;
 }
 .portfolio {
   padding-top: 20px;
@@ -134,21 +137,21 @@ header .navbar-toggler {
   border-top: 2px solid gray;
   height: 150px
 }
-.card-title {
+.project-title {
   font-size: 24px;
   font-weight: 700;
+}
+.right {
+  text-align: right;
 }
 
 /* Media Queries
 ----------------------------*/
 @media (max-width: 767px) {
-  header .navbar-nav {
+  .navbar-nav {
     text-align: right;
   }
-  header .p-2 {
-    padding-right: 0!important;
-  }
-  header h1, header h2, header p {
+  #welcome-section h1, #welcome-section h2, #welcome-section p {
     text-align: center;
   }
   .contact-info a {
