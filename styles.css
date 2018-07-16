@@ -50,14 +50,10 @@ nav, #welcome-section, footer {
 nav, #welcome-section {
   font-size: 1.25rem;
 }
-#welcome-section .profile-img {
-  width: 300px;
-  border-radius: 10%;
-}
 #welcome-section .container {
   padding-bottom: 25px;
 }
-#welcome-section h1, #welcome-section h2, #welcome-section p {
+#welcome-section h1, #welcome-section h2 {
   color: #EDF2F4;
   margin: 0;
 }
@@ -111,18 +107,11 @@ footer h2 {
 /* Additional Styles
 ----------------------------*/
 #welcome-section {
-  min-height: 99.8vh;
-  padding-top: 15vh;
+  min-height: 100vh;
+  padding-top: 30vh;
 }
-.about {
-  padding-bottom: 20px;
-}
-.portfolio {
-  padding-top: 20px;
-}
-.profile-img {
-  width: 250px;
-  border-radius: 10%;
+#projects {
+  padding: 40px 0;
 }
 .card-col {
   margin: 10px 0;
@@ -135,7 +124,8 @@ footer h2 {
 }
 .card-body {
   border-top: 2px solid gray;
-  height: 150px
+  height: 200px;
+  padding: 30px 50px;
 }
 .project-title {
   font-size: 24px;
